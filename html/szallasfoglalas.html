@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTf-8">
+  <title>Szállodafoglaló</title>
+  <link rel="stylesheet" href="../css/bootstrap-grid.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/sajat.css">
+  <script src="../js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <script src="../js/szallasfoglalas.js"></script>
+  <ul class="nav nav-tabs bg-dark" id="navbar">
+    <img src="../img/logo.jfif" alt="A hotel logója" class="fejleckep">
+    <li class="nav-item">
+      <a class="nav-link " aria-current="page" href="../html/index.html">Szállodáról</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" aria-current="page" href="../html/kepgaleria.html">Képgaléria</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="../html/arkalkulalas.html" aria-current="page">Árkalkuláció</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="../html/szallasfoglalas.html" aria-current="page">Szállásfoglalás</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="../html/elerhetoseg.html" aria-current="page">Elérhetőség</a>
+    </li>
+
+
+  </ul>
+  <div id="foglalo">
+    <form id="form">
+      <label for="nev">Kérjük adja meg a foglaló nevét: *</label>
+      <input type="text" id="nev"> <br>
+      <label for="email" class="sr-only">Adja meg az email címét: *</label>
+      <input type="email" id="email" value="@"> <br>
+      <label for="telszam">Kérjük adja meg a telefonszámát: *</label>
+      <div class="input-group mb-3" id="eleje">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">+36</span>
+        </div>
+        <input type="text" class="form-control" placeholder="204562579" aria-label="" aria-describedby="basic-addon1"
+          id="szam">
+      </div>
+      <label for="datum">Kérjük adja meg az érkezés dátumát: *</label>
+      <input type="date" id="erkezes"> <br>
+      <label for="tavozas"> Kérjük adja meg a távozás dátumát: *</label>
+      <input type="date" id="tavozas"> <br>
+      <label for="felnottek">Kérjük adja meg a felnőttek számát: *</label>
+      <input type="number" id="felnottek">
+      <br>
+      <label for="gyerekek">Kérjük adja meg a gyerekek számát: *</label>
+      <input type="number" id="gyerekek"> <br>
+      <label for="szoba">Kérjük adja meg az oldalon előre kinézett szoba kódját: *</label>
+      <input type="number" id="szoba"> <br>
+      (8 számjegyű szám)<br>
+      <label for="lista">Adja meg,hogy hány szobát szeretne:</label>
+      <select name="Szobák száma:" id="lista">
+        <option value="">1</option>
+        <option value="">2</option>
+        <option value="">3</option>
+        <option value="">4</option>
+        <option value="">5</option>
+      </select>
+      <br>
+      <input type="button" value="Foglalás" id="btn">
+    </form>
+    <span id="foglalas"></span> <br>
+    <hr id="hr2">
+    <span id="csillag">*A csillaggal jelölt mezők kitöltése kötelező!</span>
+  </div>
+</body>
+
+</html>
