@@ -28,7 +28,7 @@ function szamitas() {
     if (classicVar) {
         $("arkiiras").innerText = "A kalkuláció alapján " + ((gyerekSzam * 19000) + (felnottSzam * 24000)) * szobakSzama * napokSzama * 1.5 + " Ft-ba kerülne a nyaralás szállodánkban.";
     } else if (lakosztalyVar) {
-        $("arkiiras").innerText = "A kalkuláció alapján " + (gyerekSzam * 19000) + (felnottSzam * 24000) * szobakSzama * napokSzama * 2.5 + "Ft-ba kerülne a nyaralás szállodánkban.";
+        $("arkiiras").innerText = "A kalkuláció alapján " + ((gyerekSzam * 19000) + (felnottSzam * 24000)) * szobakSzama * napokSzama * 2.5 + "Ft-ba kerülne a nyaralás szállodánkban.";
     } else {
         window.alert("Adjon meg szobatípust!");
     }

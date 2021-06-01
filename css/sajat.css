@@ -109,6 +109,7 @@ hr {
 #foglalas {
     font-size: 30px;
     color: rgb(124, 241, 124);
+    text-align: center;
 }
 
 #csillag {
@@ -147,6 +148,12 @@ hr {
     border-top: 2px solid #000000;
     border-bottom: 2px solid #ffffff;
 }
+.input-group{
+width: 25%;
+
+}
+    
+
 
 /*Szállásfoglalás vége*/
 /*Elérhetőség */

@@ -21,5 +21,5 @@ function foglalas() {
     if ($("szoba") > 8 || $("szoba" < 8)) {
         window.alert("Hibás kódot adott meg!");
     }
-    $("foglalas").innerHTML = "Kedves " + $("nev").value + " A szobafoglalás sikeresen megtörtént!";
+    $("foglalas").innerHTML = "Kedves " + $("nev").value + "! A szobafoglalás sikeresen megtörtént!";
 }
